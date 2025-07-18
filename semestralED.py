@@ -3,11 +3,11 @@ import tkinter as tk
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("Proyecto Semestral - Estructuras Discretas")
-ventana.geometry("600x500") # Ancho x Alto en píxeles
+ventana.geometry("600x500")
 
-# Crear un marco (frame) para la presentación
-frame_presentacion = tk.Frame(ventana, pady=20) # pady añade un espacio vertical
-frame_presentacion.pack() # Coloca el marco en la ventana
+# Crear un marco para la presentación
+frame_presentacion = tk.Frame(ventana, pady=20)
+frame_presentacion.pack() 
 
 # Crear las etiquetas con la información
 titulo = tk.Label(frame_presentacion, text="Universidad Tecnológica de Panamá", font=("Arial", 16, "bold"))
