@@ -6,15 +6,14 @@ import os
 from PIL import Image, ImageTk
 import graphviz
 
-# --- Variables globales ---
+#Variables globales
 conjunto_A_global = []
 conjunto_B_global = []
 producto_cartesiano_global = []
 relacion_R_global = []
 relacion_S_global = []
 
-# --- FUNCIONES DE LÓGICA ---
-
+#FUNCIONES DE LÓGICA
 def procesar_conjuntos():
     global conjunto_A_global, conjunto_B_global, producto_cartesiano_global
     texto_A = entry_A.get()
@@ -226,7 +225,7 @@ main_canvas.bind('<Configure>', lambda e: main_canvas.configure(scrollregion=mai
 scrollable_frame = tk.Frame(main_canvas)
 main_canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 
-# --- SECCIÓN DE PRESENTACIÓN ---
+#SECCIÓN DE PRESENTACIÓN
 frame_presentacion = tk.Frame(scrollable_frame, pady=20)
 frame_presentacion.pack(pady=10, padx=10) 
 titulo = tk.Label(frame_presentacion, text="Universidad Tecnológica de Panamá", font=("Arial", 16, "bold"), justify="center")
